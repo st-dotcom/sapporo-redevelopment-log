@@ -1,0 +1,40 @@
+site_name: 札幌再開発記録
+site_url: https://(あなたのアカウント名).github.io/(リポジトリ名)/
+site_author: Sato
+
+# テーマ設定（Material for MkDocs）
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs        # 上部にタブメニューを表示
+    - navigation.top         # 「トップに戻る」ボタン
+    - toc.integrate          # 目次をサイドバーに統合
+
+  # ダークモード・ライトモードの切り替えスイッチ
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+
+# 画像拡大などの機能拡張
+markdown_extensions:
+  - attr_list                # 画像のサイズ調整などに必要
+  - admonition               # コラムや注釈を見やすく表示
+  - pymdownx.details         # 折りたたみ機能
+  - pymdownx.superfences     # コードブロックなど
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# プラグイン設定
+plugins:
+  - search                   # 検索機能
+  - glightbox                # 画像をクリックで拡大表示する機能
+
+copyright: Copyright &copy; 2026 Sato
