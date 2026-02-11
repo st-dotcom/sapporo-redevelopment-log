@@ -1,6 +1,6 @@
 サイトのディレクトリ構成
 
-'''bash
+```bash
 sapporo-redevelopment-log/
 ├── .github/
 │   └── workflows/
@@ -12,4 +12,4 @@ sapporo-redevelopment-log/
 │   │   └── images/      <-- 写真フォルダ
 │   │       └── photo.jpg
 ├── mkdocs.yml           <-- サイトの設定ファイル
-'''
+```
